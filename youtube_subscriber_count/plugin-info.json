@@ -1,5 +1,6 @@
 {
   "display_name": "YouTube Subscriber Count",
   "id": "youtube_subscriber_count",
-  "class": "YoutubeSubsCount"
+  "class": "YoutubeSubsCount",
+  "repository": "https://github.com/shadal18/InkyPi-Youtube-Subscriber-Count"
 }
