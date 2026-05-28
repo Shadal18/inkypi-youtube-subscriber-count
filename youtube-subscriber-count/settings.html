@@ -1,0 +1,71 @@
+<div class="form-group">
+  <label for="channel_id" class="form-label">YouTube Channel ID</label>
+  <input
+    type="text"
+    id="channel_id"
+    name="channel_id"
+    placeholder="Enter your YouTube channel ID"
+    class="form-input"
+    required
+  />
+</div>
+
+<div class="form-group">
+  <label for="custom_text" class="form-label">Custom Subscribers Text</label>
+  <input type="text" id="custom_text" name="custom_text" placeholder="SUBSCRIBERS" class="form-input" />
+</div>
+
+<hr style="border: 0; border-top: 1px solid rgba(0, 0, 0, 0.12); margin: 24px 0 18px" />
+
+<div class="form-group" style="margin-bottom: 20px">
+  <div
+    style="
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #555;
+      margin-bottom: 10px;
+    "
+  >
+    Plugin Repository
+  </div>
+
+  <div style="background: #f8f9fa; border: 1px solid #dcdfe3; border-radius: 10px; padding: 14px 16px">
+    <a
+      href="https://github.com/shadal18/inkypi-youtube-subscriber-count-plugin"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="
+        color: #0d6efd;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        word-break: break-word;
+        display: inline-block;
+        margin-bottom: 6px;
+      "
+    >
+      github.com/shadal18/inkypi-youtube-subscriber-count-plugin
+    </a>
+
+    <div style="font-size: 0.9rem; color: #666">Setup help, updates, release notes, and source code.</div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof pluginSettings !== "undefined" && pluginSettings) {
+      const customText = document.getElementById("custom_text")
+      const channelId = document.getElementById("channel_id")
+
+      if (customText) {
+        customText.value = pluginSettings.custom_text || "SUBSCRIBERS"
+      }
+
+      if (channelId) {
+        channelId.value = pluginSettings.channel_id || ""
+      }
+    }
+  })
+</script>

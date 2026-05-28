@@ -1,0 +1,5 @@
+{
+  "display_name": "YouTube Subscriber Count",
+  "id": "youtube_subscriber_count",
+  "class": "YoutubeSubsCount"
+}

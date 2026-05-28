@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  gap: 1.5rem;
+  background-color: white;
+}
+
+.youtube-icon {
+  width: 360px;
+  height: 230px;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.25));
+}
+
+.subscribers-label {
+  font-weight: 700;
+  font-size: min(6cqh, 5.5cqi);
+  color: #333;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.subscriber-count {
+  font-weight: 900;
+  font-size: min(18cqh, 16cqi);
+  color: #cc0000; /* YouTube red */
+  user-select: none;
+}

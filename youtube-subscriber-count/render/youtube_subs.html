@@ -1,0 +1,9 @@
+{% extends "plugin.html" %}
+
+{% block content %}
+<div class="container">
+  <img src="{{logo_path}}" alt="YouTube Logo" class="youtube-icon" />
+  <div class="subscribers-label">{{ title }}</div>
+  <div class="subscriber-count">{{ subscriber_count }}</div>
+</div>
+{% endblock %}
