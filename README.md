@@ -7,7 +7,7 @@ A custom InkyPi plugin that shows a YouTube channel subscriber count on an e-pap
 Use the InkyPi plugin installer with the plugin ID and this repository URL, following the install pattern shown by the official InkyPi plugin template.
 
 ```bash
-inkypi plugin install youtube_subs https://github.com/shadal18/inkypi-youtube-subscriber-count
+inkypi plugin install youtube_subscriber_count https://github.com/shadal18/inkypi-youtube-subscriber-count
 ```
 
 ## Update
@@ -24,8 +24,8 @@ To update the plugin on your InkyPi device:
    git pull origin main && \
    if [ -d youtube_subs ]; then \
      shopt -s dotglob nullglob && \
-     mv youtube_subs/* . && \
-     rmdir youtube_subs; \
+     mv youtube_subscriber_count/* . && \
+     rmdir youtube_subscriber_count; \
    fi && \
    sudo systemctl restart inkypi.service
    ```
