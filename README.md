@@ -38,7 +38,6 @@ If you don’t see your changes after updating:
 
 ## Requirements
 
-- A working InkyPi installation with plugin support.
 - A valid YouTube Data API key with access to YouTube Data API v3.
 - A YouTube channel ID for the channel you want to display.
 - Network access from the InkyPi device to the YouTube Data API.
@@ -51,7 +50,6 @@ This plugin is an extension for the InkyPi e-paper display frame and includes th
 - Uses the YouTube channel ID as the lookup target.
 - Supports a custom header label such as `SUBSCRIBERS`.
 - Formats subscriber count with thousands separators for readability.
-- Clean layout optimized for quick glance reading on e-paper.
 - Uses the YouTube channel statistics endpoint as the data source.
 
 ## Settings
@@ -65,7 +63,17 @@ The plugin settings page lets you customize:
 
 This plugin requires a YouTube API key.
 
-To add the key in InkyPi:
+### Create a YouTube API key
+
+1. Go to [https://console.cloud.google.com/](https://console.cloud.google.com/).
+2. Create a new Google Cloud project.
+3. Open **APIs & Services**.
+4. Enable **YouTube Data API v3**.
+5. Open **Credentials**.
+6. Click **Create Credentials** and choose **API key**.
+7. Copy the generated API key.
+
+### Add the key in InkyPi
 
 1. Open the InkyPi front page.
 2. Click the **key icon**.
@@ -73,6 +81,17 @@ To add the key in InkyPi:
 4. Paste in your YouTube API key.
 5. Save it.
 6. Restart InkyPi if needed.
+
+## Channel ID
+
+To find your YouTube channel ID:
+
+1. Sign in to YouTube.
+2. Open **Settings** for the account.
+3. Go to **Advanced settings**.
+4. Copy the **Channel ID** value.
+
+Use that Channel ID in the plugin settings page.
 
 ## Repository
 
