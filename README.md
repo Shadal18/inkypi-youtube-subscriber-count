@@ -23,9 +23,8 @@ To update the plugin on your InkyPi device:
    ```bash
    git pull origin main && \
    if [ -d youtube_subscriber_count ]; then \
-     shopt -s dotglob nullglob && \
-     mv youtube_subscriber_count/* . && \
-     rmdir youtube_subscriber_count; \
+     rsync -a youtube_subscriber_count/ ./ && \
+     rm -rf youtube_subscriber_count; \
    fi && \
    sudo systemctl restart inkypi.service
    ```
