@@ -17,7 +17,7 @@ To update the plugin on your InkyPi device:
 1. SSH into your InkyPi host.
 2. Change into the plugin directory:
    ```bash
-   cd ~/InkyPi/src/plugins/youtube_subs
+   cd ~/InkyPi/src/plugins/youtube_subscriber_count
    ```
 3. Run this update command:
    ```bash
