@@ -2,6 +2,8 @@
 
 A custom InkyPi plugin that shows a YouTube channel subscriber count on an e-paper display with a clean, glanceable layout and simple channel-based configuration.
 
+_YouTube Subscriber Count_ is a plugin for [InkyPi](https://github.com/fatihak/InkyPi) that displays live subscriber counts for a YouTube channel on your e‑ink frame.
+
 ## Install
 
 Use the InkyPi plugin installer with the plugin ID and this repository URL, following the install pattern shown by the official InkyPi plugin template.
