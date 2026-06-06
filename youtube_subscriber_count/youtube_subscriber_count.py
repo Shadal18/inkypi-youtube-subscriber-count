@@ -2,7 +2,6 @@ from plugins.base_plugin.base_plugin import BasePlugin
 import requests
 import logging
 
-
 logger = logging.getLogger(__name__)
 
 
